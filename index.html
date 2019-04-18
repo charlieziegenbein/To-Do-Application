@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <title>Reactive To-Do List</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="description" content="Reactive To-Do app that stores To-Dos, and allows user to create and delete To-Dos."/>
+  <meta name="author" content="Charles Ziegenbein" />
+  <meta name="keywords" content="To-Do list, prioritizing, " />
+</head>
+
+
+<body>
+  <div class="header">
+    <p id="LogoText">Task <img id="logoimage" src="http://logodust.com/img/free/logo2.png" alt="FreeLogo" align="middle"> Desk</p>
+    <img id="logoimage1" src="http://logodust.com/img/free/logo2.png" alt="FreeLogo" align="middle" />
+    <p id="LogoText1">Task Desk</p>
+    <div class="headerdiv">
+      <span></span>
+      <a href="#">TaskDesk Account</a>
+      <a href="#">Your Tasks</a>
+      <a href="#">TaskDesk Pricing</a>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="maintodo">
+    <div id="newtodocreation">
+      <form id="todoform">
+        <input type="text" id="newItems" placeholder="Write your new tasks here!">
+        <button id="new-submit">Add Task</button>
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
 
