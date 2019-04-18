@@ -1,1 +1,190 @@
+body {
+  background: url(http://northernnightscampground.com/wp-content/uploads/2015/08/White-Linen-Seamless-Pattern-For-Website-Backgrounds.jpg);
+  background-size: cover;
+}
 
+#LogoText {
+  text-align: center;
+  font-size: 120px;
+}
+
+#logoimage {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 55px;
+}
+
+#logoimage1 {
+  display: none;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
+}
+
+#LogoText1 {
+  display: none;
+  text-align: center;
+  font-size: 80px;
+}
+
+.headerdiv {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  bottom: 100px;
+}
+
+.headerdiv > a {
+  text-align: center;
+  border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding-top: 2%;
+}
+
+.headerdiv > a:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+form {
+  /* margin-left: 30px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+#newItems {
+  height: 40px;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  margin: 0;
+  border: 2px solid green;
+  border-radius: 0;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#new-submit {
+  height: 64px;
+  grid-column-start: 9;
+  grid-column-end: 9;
+  width: 100px;
+  background-color: green;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#new-submit:hover {
+  background-color: red;
+}
+
+#maintodo {
+  width: 50%;
+  background-color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  border: 3px solid green;
+  margin-bottom: 50px;
+}
+
+#maintodo .todo {
+  font-size: 35px;
+  border-bottom: 1px solid grey;
+}
+
+#maintodo .todo:last-of-type {
+  border-bottom: none;
+}
+
+#maintodo .todo p {
+  display: inline-block;
+  padding-top: 3px;
+  text-transform: capitalize;
+  margin: 20px;
+  max-width: 400px;
+  overflow: scroll;
+}
+
+#maintodo .todo button {
+  position: relative;
+  text-align: left;
+  top: 23px;
+  width: 51px;
+  height: 37px;
+}
+
+#maintodo .todo button:hover {
+  background-color: green;
+  color: white;
+}
+
+#maintodo .todo .check {
+  float: left;
+}
+
+#maintodo .todo .delete {
+  float: right;
+}
+
+#maintodo .todo.finished p {
+  text-decoration: line-through;
+  color: lightgrey;
+  text-shadow: 10px grey;
+  max-width: 400px;
+  overflow: scroll;
+}
+
+
+@media screen and (max-width: 768px) {
+  #logoimage1 {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .headerdiv {
+    display: none;
+  }
+
+  #LogoText1 {
+    display: block;
+  }
+
+  #LogoText {
+    display: none;
+  }
+
+  #maintodo {
+    width: 60%;
+  }
+
+  #maintodo .todo p {
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 8px;
+    text-transform: capitalize;
+    margin-right: 0px;
+    max-width: 60px;
+    overflow: ellipsis;
+  }
+
+  #maintodo .todo.finished p {
+    text-decoration: line-through;
+    color: lightgrey;
+    text-shadow: 10px grey;
+    max-width: 60px;
+    overflow: scroll;
+  }
+
+}
